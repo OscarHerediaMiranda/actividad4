@@ -1,71 +1,71 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body * {
+    outline: 1px solid red;
+}
+
 body {
-    background-color: pink;
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
-    font-size: 30px;
-    font-weight: 700;
 }
 
 .header {
+    background-color: aquamarine;
     display: flex;
-    color: white;
     justify-content: center;
     align-items: center;
-    background-color: aquamarine;
     height: 60px;
 }
 
 .items {
     display: flex;
-    min-height: calc(100vh - 120px);
 }
 
 .aside {
-    background-color: aqua;
-    color: white;
+    background-color: blue;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-}
-
-.article {
-    display: flex;
-    color: white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
+    min-height: calc(100vh - 120px);
 }
 
-.figures{
+.article {
     display: flex;
-    justify-content: space-between;
-    width: 80%;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: 50%;
+    min-height: calc(100vh - 120px);
 }
 
-.item_article {
+.figure {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 15px;
     margin-bottom: 10px;
 }
 
 .item_figure {
-    background-color: gray;
-    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    background-color: aqua;
+    height: 300px;
+    width: 200px;
 }
 
 .footer {
+    background-color: aquamarine;
     display: flex;
-    color: white;
     justify-content: center;
     align-items: center;
-    background-color: aquamarine;
     height: 60px;
 }
